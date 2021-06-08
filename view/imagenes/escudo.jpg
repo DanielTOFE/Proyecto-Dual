@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <meta name="viewport" content="width=1040px, minimum-scale=0.5, maximum-scale=1.0" />
+        <title></title>
+
+		<link rel="icon" type="image/png" href="favicon.jpg">
+
+<!-- Framework CSS -->
+        <link rel="stylesheet" href="css/style/reset.css" type="text/css" media="screen, projection">
+        <!--[if lt IE 8]><link rel="stylesheet" href="css/style/ie.css" type="text/css" media="screen, projection"><![endif]-->
+        
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic' rel='stylesheet' type='text/css'>
+        
+<!-- Personal CSS -->
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+        
+        <!-- Section CSS -->
+		<link rel="stylesheet" href="css/section/home.css" type="text/css" media="screen">
+		
+        
+<!-- Libreria Jquery Javascript -->
+		<script src="scripts/js/jquery.min.js" type="text/javascript"></script>
+	
+		<script src="scripts/js/jquery-1.8.2.js" type="text/javascript"></script>
+		<script src="scripts/js/jquery.ui.core.min.js" type="text/javascript"></script>
+		<script src="scripts/js/jquery.ui.widget.min.js" type="text/javascript"></script>
+		<script src="scripts/js/jquery.ui.accordion.min.js" type="text/javascript"></script>
+		
+		<script src="scripts/js/functions.js" type="text/javascript"></script>
+		
+		<script src="scripts/js/superfish.js" type="text/javascript"></script>
+		
+	<!-- Libreria slider -->
+		<link rel="stylesheet" href="css/nivoslider/style.css" type="text/css" media="screen">
+		<script src="scripts/js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	
+	
+	
+	
+	
+	
+		<script type="text/javascript">
+			window.onload = function() {
+				$('#sf-menu').superfish({
+					animation: { height: 'show' }
+				});
+				
+				$('#tabber-calls div').click(
+					function() {
+						if(!$(this).hasClass('active')) {
+							var activeTabCall = $(this).attr('class').split(' ')[0];
+							
+							$('#tabber-calls div').removeClass('active');
+							$('#content-calls article').hide();
+							$('#content-calls .' + activeTabCall).fadeIn('100');
+							$(this).addClass('active');
+						}
+					}
+				);
+				
+				$('#calls-list').accordion({
+					active: 'false',
+					heightStyle: 'content'
+				});
+				
+								$('#slider-home').nivoSlider({
+					effect:'fade',
+					pauseTime: 6000,
+					pauseOnHover: false,
+					controlNav:false,
+					prevText:'Anterior',
+					nextText:'Següent'
+				});
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			};
+		</script>
+		
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			<section id="columnLeft" class="left">
+				<header>
+					<h1 id="logo">
+						<a href="http://www.pbbarcino.cat" title="Web oficial Penya Barcelonista Barcino"><span>Web oficial</span> Penya Barcelonista Barcino<span style="color:#216886; font-size:20px">El gust per el bon futbol</span></a>
+					</h1>
+					<nav id="nav-menu">
+						<ul id="sf-menu">
+														<li class="active">
+								<a href="index.php">Inici</a>
+								
+							</li>
+							
+							<li class="">
+								<a href="freecontent.php?menu=3">El club</a>
+																<ul class="sub-menu">
+																		<li class=""><a href="freecontent.php?menu=3">Presentació</a></li>
+									
+									<li class=""><a href="freecontent.php?menu=4">Junta Directiva</a></li>
+									
+									<li class=""><a href="freecontent.php?menu=5">Instal·lacions</a></li>
+									
+									<li class=""><a href="freecontent.php?menu=6">Equipació</a></li>
+									
+									<li class=""><a href="interview.php?menu=20">Entrevistes</a></li>
+									
+								</ul>
+								
+							</li>
+							
+							<li class="">
+								<a href="gallery.php?menu=8">Galería</a>
+																<ul class="sub-menu">
+																		<li class=""><a href="gallery.php?menu=8">Imatges</a></li>
+									
+									<li class=""><a href="videos.php?menu=9">Videos</a></li>
+									
+									<li class=""><a href="press.php?menu=10">Premsa</a></li>
+									
+								</ul>
+								
+							</li>
+							
+							<li class="">
+								<a href="teams.php?menu=12">Els equips</a>
+																<ul class="sub-menu">
+																		<li class=""><a href="teams.php?menu=12">Pre-Benjamíns</a></li>
+									
+									<li class=""><a href="teams.php?menu=13">Benjamíns</a></li>
+									
+									<li class=""><a href="teams.php?menu=14">Alevins</a></li>
+									
+									<li class=""><a href="teams.php?menu=15">Infantils</a></li>
+									
+									<li class=""><a href="teams.php?menu=16">Cadets</a></li>
+									
+									<li class=""><a href="teams.php?menu=17">Juvenils</a></li>
+									
+									<li class=""><a href="teams.php?menu=18">Primer equip</a></li>
+									
+									<li class=""><a href="teams.php?menu=19">Escola</a></li>
+									
+								</ul>
+								
+							</li>
+							
+							<li class="">
+								<a href="news.php?menu=21">Notícies</a>
+								
+							</li>
+							
+							<li class="">
+								<a href="freecontent.php?menu=23">Instal·lacions</a>
+																<ul class="sub-menu">
+																		<li class=""><a href="freecontent.php?menu=23">Municipal Menorca</a></li>
+									
+									<li class=""><a href="freecontent.php?menu=24">Municipal Sant Marti</a></li>
+									
+									<li class=""><a href="freecontent.php?menu=25">Municipal Maresme</a></li>
+									
+								</ul>
+								
+							</li>
+							
+						</ul>
+					</nav>
+				</header>
+				
+				
+				<div id="slider-home" class="nivoSlider">
+		<img src="files/slider/155.jpg" title="#caption155">
+	
+</div>
+<div id="caption155" class="nivo-html-caption">
+	 <strong>Eleccions a la presidencia P.B.Barcino 2021</strong><br>
+	 28 de Febrer eleccions a la presidencia de la P.B.Barcino [...]
+</div>
+<p>La P.B.Barcino és una entitat sense ànim de lucre, dedicada a formar tant esportiva com socialment a tots els seus jugadors, utilitzant l'esport del futbol com vincul de superació, respecte, amistat,. Potenciar aquests valors tan mancats en la societat actual creiem que és la clau perquè la nostra joventut sigui mes feliç el dia de dema.</p>
+<p>Actualment totes les nostres activitats esportives les realitzem al camp de futbol Municipal Menorca del qual, la P.B.Barcino és l'actual gestora.</p>
+<p>Des de la temporada 2009, esportivament l'entitat va realitzar un canvi d'estratègia donant prioritat absoluta al fet que la majoria de monitors entrenadors fossin jugadors o exjugadors de la nostra entitat, tots ells amb formació homologada.</p>
+<article rel="Últimes Notícies" id="lst-news" class="clear">
+	<h4 class="title-big"><span>Últimes Notícies</span></h4>
+		<div class="item-new-resume left" style="top:45px;">
+		<span class="date">Gener 29, 2021</span>
+		<a href="news_detail.php?menu=21&new=400" class="image-new">
+			<img src="files/news/medium/400.jpg">
+		</a>
+		<div class="description-new">
+			<h3><a href="news_detail.php?menu=21&new=400" class="title-new">Formació de la junta electoral</a></h3>
+			<span class="topic-new">Etiqueta: <a href="news.php?menu=21&t=12">General</a></span>
+			<p>Formació de la junta electoral [...]</p>
+		</div>
+	</div>
+	
+	<div class="item-new-resume right" style="top:45px;">
+		<span class="date">Gener 24, 2021</span>
+		<a href="news_detail.php?menu=21&new=399" class="image-new">
+			<img src="files/news/medium/399.jpg">
+		</a>
+		<div class="description-new">
+			<h3><a href="news_detail.php?menu=21&new=399" class="title-new">Eleccions a la presidencia P.B.Barcino 2021</a></h3>
+			<span class="topic-new">Etiqueta: <a href="news.php?menu=21&t=12">General</a></span>
+			<p>Eleccions a la presidencia P.B.Barcino 2021 [...]</p>
+		</div>
+	</div>
+	
+	<div class="item-new-resume left" style="top:373px;">
+		<span class="date">Desembre 30, 2020</span>
+		<a href="news_detail.php?menu=21&new=398" class="image-new">
+			<img src="files/news/medium/398.jpg">
+		</a>
+		<div class="description-new">
+			<h3><a href="news_detail.php?menu=21&new=398" class="title-new">Amb tot el desig de Felicitat i Amor per al 2021.</a></h3>
+			<span class="topic-new">Etiqueta: <a href="news.php?menu=21&t=12">General</a></span>
+			<p>[...]</p>
+		</div>
+	</div>
+	
+	<div class="item-new-resume right" style="top:373px;">
+		<span class="date">Novembre 30, 2020</span>
+		<a href="news_detail.php?menu=21&new=397" class="image-new">
+			<img src="files/news/medium/397.jfif">
+		</a>
+		<div class="description-new">
+			<h3><a href="news_detail.php?menu=21&new=397" class="title-new">Assemblea General Ordinaria</a></h3>
+			<span class="topic-new">Etiqueta: <a href="news.php?menu=21&t=12">General</a></span>
+			<p>Assemblea General Ordinaria [...]</p>
+		</div>
+	</div>
+	
+</article>
+			</section>
+			<section id="columnRight" class="right">
+				<article rel="Xarxes Socials" id="social-networks" class="right">
+	<a href="http://es-la.facebook.com/pages/Pe%C3%B1a-Barcelonista-Barcino/425520480834525" target="_blank" title="Facebook" class="facebook"></a>
+	<a href="https://twitter.com/pb_barcino" target="_blank" title="Twitter" class="twitter"></a>
+	<a href="mailto:info@pbbarcino.cat" title="E-mail" class="e-mail"></a>
+</article>
+<div class="clear"></div>
+<article rel="Convocatòries i últims resultats" id="calls">
+	<div id="tabber-calls" class="clear">
+		<div class="calls active">Convocatòries</div>
+		<!-- 
+		<div class="results">Últims resultats</div>
+		 -->
+	</div>
+	<div id="content-calls">
+		<article rel="Convocatòries" class="calls clear">
+			<div id="calls-list">
+								<h3>Pre-Benjamíns</h3>
+				<div class="teams">
+					<ul>
+												<li class="clear">
+							<div class="name-team"><a href="">Pre Benjamí-A</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>00:00 H.</strong>
+									
+																		Partit
+									<strong>00:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									10/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal<br>
+									
+																		<strong>Contrari</strong>Descansa<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Pre Benjamí-B</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>10:00 H.</strong>
+									
+																		Partit
+									<strong>11:30 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Can Zam 1<br>
+									
+																		<strong>Contrari</strong>Arrabal Calaf<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Pre Benjamí-C</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>10:15 H.</strong>
+									
+																		Partit
+									<strong>11:15 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Sant Marti<br>
+									
+																		<strong>Contrari</strong>Arrabal Calaf<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Pre Benjami-D</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>10:30 H.</strong>
+									
+																		Partit
+									<strong>11:30 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>Can Vidalet<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Pre Benjami-E</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>10:15 H.</strong>
+									
+																		Partit
+									<strong>11:15 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Sant Marti<br>
+									
+																		<strong>Contrari</strong>Sistrells<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+					</ul>
+				</div>
+				
+				<h3>Benjamíns</h3>
+				<div class="teams">
+					<ul>
+												<li class="clear">
+							<div class="name-team"><a href="">Benjamí-A</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>09:15 H.</strong>
+									
+																		Partit
+									<strong>10:15 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>Arrabal Calaf<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Benjamí-B</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>12:15 H.</strong>
+									
+																		Partit
+									<strong>13:45 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Trinitat Vella<br>
+									
+																		<strong>Contrari</strong>P.B.Trinitat Vella<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Benjamí-C</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>10:15 H.</strong>
+									
+																		Partit
+									<strong>11:15 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Sant Marti<br>
+									
+																		<strong>Contrari</strong>Arrabal Calaf<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Benjamí-D</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>09:15 H.</strong>
+									
+																		Partit
+									<strong>10:15 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>P.B.Collblanch Sants<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+					</ul>
+				</div>
+				
+				<h3>Alevins</h3>
+				<div class="teams">
+					<ul>
+												<li class="clear">
+							<div class="name-team"><a href="">Aleví-A</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>09:00 H.</strong>
+									
+																		Partit
+									<strong>10:30 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal L'Aliga<br>
+									
+																		<strong>Contrari</strong>Europa C.E.<br>
+									
+																		<strong>Jornada</strong>1 Jornada de Lliga
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Aleví-B</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>08:00 H.</strong>
+									
+																		Partit
+									<strong>09:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									18/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>Sant Gabriel<br>
+									
+																		<strong>Jornada</strong>1 Jornada de Lliga
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Aleví-C</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>08:00 H.</strong>
+									
+																		Partit
+									<strong>09:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>P.B.Trinitat Vella<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Aleví-D</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>08:00 H.</strong>
+									
+																		Partit
+									<strong>09:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>P.B.Trinitat Vella<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Aleví-E</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>14:00 H.</strong>
+									
+																		Partit
+									<strong>15:30 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Trinitat Vella<br>
+									
+																		<strong>Contrari</strong>P.B.Trinitat Vella<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Alevi-F</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>10:00 H.</strong>
+									
+																		Partit
+									<strong>11:30 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal El Moli<br>
+									
+																		<strong>Contrari</strong>Can Vidalet<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Alevi-G</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>09:00 H.</strong>
+									
+																		Partit
+									<strong>10:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Sant Marti<br>
+									
+																		<strong>Contrari</strong>P.B.Cinc Copes<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Alevi-H</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>09:00 H.</strong>
+									
+																		Partit
+									<strong>10:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Sant Marti<br>
+									
+																		<strong>Contrari</strong>P.B.Cinc Copes<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Alevi-I</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>08:00 H.</strong>
+									
+																		Partit
+									<strong>09:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									18/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>P.B.Cinc Copes<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Alevin-J</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>10:30 H.</strong>
+									
+																		Partit
+									<strong>11:30 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>Arrabal Calaf<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+					</ul>
+				</div>
+				
+				<h3>Infantils</h3>
+				<div class="teams">
+					<ul>
+												<li class="clear">
+							<div class="name-team"><a href="">Infantil-A</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>13:15 H.</strong>
+									
+																		Partit
+									<strong>14:45 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Fort pienc<br>
+									
+																		<strong>Contrari</strong>P.B.Cinc Copes<br>
+									
+																		<strong>Jornada</strong>1 Jornada de Lliga
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Infantil-B</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>11:00 H.</strong>
+									
+																		Partit
+									<strong>12:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									18/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>Arrabal Calaf<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Infantil-C</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>09:15 H.</strong>
+									
+																		Partit
+									<strong>10:15 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									18/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>Congres<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Infantil-D</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>11:30 H.</strong>
+									
+																		Partit
+									<strong>12:30 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>P.B.Cinc Copes<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Infantil-E</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>08:45 H.</strong>
+									
+																		Partit
+									<strong>10:15 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									18/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Can Zam 1<br>
+									
+																		<strong>Contrari</strong>Arrabal Calaf<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Infantil Femani</a></div>
+							
+														<div class="no-call">
+								<span>
+									Aquest equip no te cap convocatoria
+								</span>
+							</div>
+							
+						</li>
+						
+					</ul>
+				</div>
+				
+				<h3>Cadets</h3>
+				<div class="teams">
+					<ul>
+												<li class="clear">
+							<div class="name-team"><a href="">Cadet-A</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>12:40 H.</strong>
+									
+																		Partit
+									<strong>14:10 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									18/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Can Drago<br>
+									
+																		<strong>Contrari</strong>Congres<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Cadet-B</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>15:15 H.</strong>
+									
+																		Partit
+									<strong>16:15 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>F.Terrassa 1906<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Cadet-C</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>09:00 H.</strong>
+									
+																		Partit
+									<strong>10:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									18/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Sant Marti<br>
+									
+																		<strong>Contrari</strong>Can Vidalet<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Cadet-D</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>15:00 H.</strong>
+									
+																		Partit
+									<strong>16:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									18/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Sant Marti<br>
+									
+																		<strong>Contrari</strong>Congres<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+					</ul>
+				</div>
+				
+				<h3>Juvenils</h3>
+				<div class="teams">
+					<ul>
+												<li class="clear">
+							<div class="name-team"><a href="">Juvenil-A</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>17:15 H.</strong>
+									
+																		Partit
+									<strong>18:15 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>Montañesa<br>
+									
+																		<strong>Jornada</strong>1 Jornada de Lliga
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Juvenil-B</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>11:00 H.</strong>
+									
+																		Partit
+									<strong>12:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									18/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>Turo Peira<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Juvenil-C</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>15:30 H.</strong>
+									
+																		Partit
+									<strong>17:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> C.D.E.Brafa<br>
+									
+																		<strong>Contrari</strong>E.Brafa<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+					</ul>
+				</div>
+				
+				<h3>Primer equip</h3>
+				<div class="teams">
+					<ul>
+												<li class="clear">
+							<div class="name-team"><a href="">Amateur</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>16:30 H.</strong>
+									
+																		Partit
+									<strong>18:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									18/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal La Satalia<br>
+									
+																		<strong>Contrari</strong>Poble Sec U.E.<br>
+									
+																		<strong>Jornada</strong>2 Jornada de Lliga
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Amateur Femeni</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>19:00 H.</strong>
+									
+																		Partit
+									<strong>20:00 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>Levante Les Planes<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+					</ul>
+				</div>
+				
+				<h3>Escola</h3>
+				<div class="teams">
+					<ul>
+												<li class="clear">
+							<div class="name-team"><a href="">Escola-A</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>11:30 H.</strong>
+									
+																		Partit
+									<strong>12:30 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									17/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>Sistrells<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+						<li class="clear">
+							<div class="name-team"><a href="">Escola-B</a></div>
+														<div class="time-match left">
+								<span>
+																		Arribada
+									<strong>11:30 H.</strong>
+									
+																		Partit
+									<strong>12:30 H.</strong>
+									
+								</span>
+																<span class="date-match">
+									10/10/2020
+								</span>
+								
+							</div>
+							<div class="description-team right">
+								<p>
+																		<strong>Camp</strong> Municipal Menorca<br>
+									
+																		<strong>Contrari</strong>Escola A<br>
+									
+																		<strong>Jornada</strong>Amistos
+									
+								</p>
+							</div>
+							
+							
+						</li>
+						
+					</ul>
+				</div>
+				
+			</div>
+		</article>
+		<article rel="Últims resultats" class="results" style="display:none;"></article>
+	</div>
+</article>
+<article rel="¿Vols jugar a la Penya Barcino?" id="want-to-play">
+	<h3>¿Vols jugar a la Penya Barcino?</h3>
+	<label>Omple el formulari i breument ens posarem en contacte</label>
+	<a href="inscription.php?menu=22" class="btn-link">Inscriure's</a>
+</article>
+<article rel="Patrocinadors" id="sponsors">
+	<h4 class="title-small"><span>Patrocinadors<span></h4>
+	<div id="sponsors-content" class="clear">
+					
+						<div class="left">
+				<a href="http://gruposafinidadgs.com/julianfernandez" target="_blank">
+					<img src="files/sponsors/39.png">
+				</a>
+			</div>
+			
+		
+			
+						<div class="right">
+				<a href="https://www.gumperapi.com/index.php" target="_blank">
+					<img src="files/sponsors/42.png">
+				</a>
+			</div>
+			
+		
+			
+						<div class="left">
+				<a href="http://www.polleriasuiza.com/" target="_blank">
+					<img src="files/sponsors/44.jpg">
+				</a>
+			</div>
+			
+		
+						<div class="right">
+				<img src="files/sponsors/45.jpg">
+			</div>
+			
+			
+		
+			
+						<div class="left">
+				<a href="https://www.opticalia.es/" target="_blank">
+					<img src="files/sponsors/46.jpg">
+				</a>
+			</div>
+			
+		
+						<div class="right">
+				<img src="files/sponsors/47.gif">
+			</div>
+			
+			
+		
+			
+						<div class="left">
+				<a href="https://www.carpinteriapersilux.com/" target="_blank">
+					<img src="files/sponsors/48.jpg">
+				</a>
+			</div>
+			
+		
+			
+						<div class="right">
+				<a href="https://www.movileschinosbarcelona.com/" target="_blank">
+					<img src="files/sponsors/49.jpg">
+				</a>
+			</div>
+			
+		
+						<div class="left">
+				<img src="files/sponsors/50.jpg">
+			</div>
+			
+			
+		
+						<div class="right">
+				<img src="files/sponsors/51.JPG">
+			</div>
+			
+			
+		
+			
+						<div class="left">
+				<a href="http://www.pentex.pro/" target="_blank">
+					<img src="files/sponsors/52.jpg">
+				</a>
+			</div>
+			
+		
+						<div class="right">
+				<img src="files/sponsors/53.jpg">
+			</div>
+			
+			
+		
+						<div class="left">
+				<img src="files/sponsors/54.jpg">
+			</div>
+			
+			
+		
+	</div>
+</article>
+			</section>
+			<div class="clear"></div>
+		</div>
+		<footer>
+			<section class="clear">
+				<article rel="Dades de contacte" id="footer-contact-info" class="left">
+					<h1><a href=""><span>Web oficial</span> Penya Barcelonista Barcino</a></h1>
+					<address>
+						<p>
+							<label>Adreça del camp i el local:</label>
+							C/ Menorca 7-11 Barcelona (08020)
+						</p>
+						<p>
+							<label>Telèfon:</label>
+							663.020.795
+						</p>
+						<p>
+							<label>Correu electrónic:</label>
+							<a href="mailto:info@pbbarcino.cat" class="mailOfuscate">tac.onicrabbp@ofni</a>
+						</p>
+						<p>
+							<label>Horari d’atenció al públic:</label>
+							De dilluns a divendres de 17.00 a 22.00 hores
+						</p>
+					</address>
+				</article>
+				<article rel="sitemap" id="footer-sitemap" class="left">
+					<h4>Mapa Web</h4>
+										<ul class="left">
+												<li><a href="index.php">Inici</a></li>
+						
+						<li><a href="freecontent.php?menu=2">El club</a></li>
+						
+						<li><a href="freecontent.php?menu=3">Presentació</a></li>
+						
+						<li><a href="freecontent.php?menu=4">Junta Directiva</a></li>
+						
+						<li><a href="freecontent.php?menu=5">Instal·lacions</a></li>
+						
+						<li><a href="freecontent.php?menu=6">Equipació</a></li>
+						
+						<li><a href="interview.php?menu=20">Entrevistes</a></li>
+						
+						<li><a href="freecontent.php?menu=7">Galería</a></li>
+						
+						<li><a href="gallery.php?menu=8">Imatges</a></li>
+						
+						<li><a href="videos.php?menu=9">Videos</a></li>
+						
+						<li><a href="press.php?menu=10">Premsa</a></li>
+						
+					</ul>
+					
+					<ul class="left">
+												<li><a href="freecontent.php?menu=11">Els equips</a></li>
+						
+						<li><a href="teams.php?menu=12">Pre-Benjamíns</a></li>
+						
+						<li><a href="teams.php?menu=13">Benjamíns</a></li>
+						
+						<li><a href="teams.php?menu=14">Alevins</a></li>
+						
+						<li><a href="teams.php?menu=15">Infantils</a></li>
+						
+						<li><a href="teams.php?menu=16">Cadets</a></li>
+						
+						<li><a href="teams.php?menu=17">Juvenils</a></li>
+						
+						<li><a href="teams.php?menu=18">Primer equip</a></li>
+						
+						<li><a href="teams.php?menu=19">Escola</a></li>
+						
+						<li><a href="news.php?menu=21">Notícies</a></li>
+						
+						<li><a href="freecontent.php?menu=26">Instal·lacions</a></li>
+						
+						<li><a href="freecontent.php?menu=23">Municipal Menorca</a></li>
+						
+					</ul>
+					
+					<ul class="left">
+												<li><a href="freecontent.php?menu=24">Municipal Sant Marti</a></li>
+						
+						<li><a href="freecontent.php?menu=25">Municipal Maresme</a></li>
+						
+					</ul>
+					
+				</article>
+				<aside rel="legal" id="footer-legal" class="left">
+					<h4>Avis Legal</h4>
+					<p>Esta política de privacidad establece la manera que la Penya Barcelonista Barcino utiliza y protege cualquier información que usted da a la Penya Barcelonista Barcino cuando se utiliza este sitio web. La Penya Barcelonista Barcino se ha comprometido a garantizar que su privacidad está protegida. Si le pedimos que nos proporcione cierta información que puede ser identificado cuando se utiliza este sitio web, entonces usted puede estar seguro de que sólo se utilizará de acuerdo con esta declaración de privacidad. La Penya Barcelonista Barcino puede cambiar esta política de vez en cuando al actualizar esta página. Usted debe visitar esta página de vez en cuando para asegurarse de que está satisfecho con los cambios.</p>
+					<p>Estamos comprometidos a asegurar que su información está segura. Con el fin de evitar el acceso no autorizado o divulgación, hemos puesto en marcha procedimientos físicos, electrónicos y administrativos para salvaguardar y asegurar la información que recopilamos en línea.</p>
+				</aside>
+			</section>
+		</footer>
+		<div id="copyright">
+			© CopyRight 2012. All Rights Reserved.
+			<a href="http://www.empresaweb-cs.es" target="_blank" class="right" id="code-solutions">Code Solutions</a>
+		</div>
+	</body>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23021506-2']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+</html>
